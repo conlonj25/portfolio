@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 export default function Home() {
 	return (
@@ -11,7 +12,7 @@ export default function Home() {
 			</div>
 			<div className="container mx-auto">
 				<div className="mb-5">
-					<Projects />
+					<Skills />
 				</div>
 				<div className="mb-5">
 					<Projects />
