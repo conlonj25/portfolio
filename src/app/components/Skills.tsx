@@ -1,5 +1,6 @@
 import SkillBadge from './SkillBadge';
 import skillData from '@/constants/skillData';
+import Image from 'next/image';
 
 const Skills = () => {
 	return (

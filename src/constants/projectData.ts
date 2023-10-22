@@ -16,7 +16,7 @@ const projectData: ProjectData[] = [
 		description: 'Mock-up web application. Online book retailer.',
 		imageLink: '/bookshelf.png',
 		codeLink: 'https://github.com/conlonj25/Bookshelf',
-		liveLink: '',
+		liveLink: undefined,
 	},
 	{
 		title: 'Minecraft Clone',
@@ -33,7 +33,7 @@ const projectData: ProjectData[] = [
 			'Hardware application designed to count people on CCTV footage in real-time',
 		imageLink: '/cctv.gif',
 		codeLink: 'https://github.com/conlonj25/Masters_Project_EE595',
-		liveLink: '',
+		liveLink: undefined,
 	},
 	{
 		title: 'Igntion SCADA Demo',
@@ -41,7 +41,7 @@ const projectData: ProjectData[] = [
 		description:
 			'Industrial SCADA application. This is a demo project for an engineering firm. Deployed on Linode.',
 		imageLink: '/ignition.gif',
-		codeLink: '',
+		codeLink: undefined,
 		liveLink:
 			'http://178.79.174.57:8088/data/perspective/client/SL_Controls_Demo/',
 	},

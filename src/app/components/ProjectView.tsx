@@ -26,16 +26,20 @@ const ProjectView = ({ projectData }: ProjectViewProps) => {
 				{projectData.description}
 			</p>
 			<div className="flex justify-around m-2">
-				<a href={projectData.codeLink}>
-					<button className="bg-secondary px-5 py-2 rounded-md text-secondary-foreground">
-						Code
-					</button>
-				</a>
-				<a href={projectData.liveLink}>
-					<button className="bg-primary px-5 py-2 rounded-md text-primary-foreground">
-						Live
-					</button>
-				</a>
+				{projectData.codeLink && (
+					<a href={projectData.codeLink}>
+						<button className="bg-secondary px-5 py-2 rounded-md text-secondary-foreground">
+							Code
+						</button>
+					</a>
+				)}
+				{projectData.liveLink && (
+					<a href={projectData.liveLink}>
+						<button className="bg-primary px-5 py-2 rounded-md text-primary-foreground">
+							Live
+						</button>
+					</a>
+				)}
 			</div>
 		</div>
 	);
