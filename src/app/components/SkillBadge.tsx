@@ -1,20 +1,17 @@
+import { Skill } from '@/types';
 import { IconType, IconBaseProps } from 'react-icons';
 import {
-	SiAstro,
-	SiGitlab,
 	SiJavascript,
+	SiMysql,
 	SiNextdotjs,
+	SiNginx,
+	SiPython,
 	SiReact,
+	SiTailwindcss,
 	SiTypescript,
 } from 'react-icons/si';
 
-type Skill =
-	| 'typescript'
-	| 'javascript'
-	| 'react'
-	| 'next'
-	| 'astro'
-	| 'gitlab';
+import { FaJava } from 'react-icons/fa';
 
 type SkillBadgeProps = {
 	skill: Skill;
@@ -26,14 +23,20 @@ const getIcon = (skill: Skill): IconType => {
 			return SiTypescript;
 		case 'javascript':
 			return SiJavascript;
+		case 'java':
+			return FaJava;
+		case 'python':
+			return SiPython;
+		case 'mysql':
+			return SiMysql;
+		case 'nginx':
+			return SiNginx;
 		case 'react':
 			return SiReact;
 		case 'next':
 			return SiNextdotjs;
-		case 'astro':
-			return SiAstro;
-		case 'gitlab':
-			return SiGitlab;
+		case 'tailwind':
+			return SiTailwindcss;
 		default:
 			return SiTypescript;
 	}
@@ -45,14 +48,20 @@ const getText = (skill: Skill): string => {
 			return 'Typescript';
 		case 'javascript':
 			return 'Javascript';
+		case 'java':
+			return 'Java';
+		case 'python':
+			return 'Python';
+		case 'mysql':
+			return 'MySQL';
+		case 'nginx':
+			return 'Nginx';
 		case 'react':
 			return 'React';
 		case 'next':
 			return 'Next JS';
-		case 'astro':
-			return 'Astro';
-		case 'gitlab':
-			return 'Gitlab';
+		case 'tailwind':
+			return 'Tailwind CSS';
 		default:
 			return 'Typescript';
 	}
