@@ -3,7 +3,6 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 import { ModeToggle } from './components/ModeToggle';
-import Shields from './components/Shields';
 
 export default function Home() {
 	return (
@@ -16,9 +15,6 @@ export default function Home() {
 			<div className="container mx-auto">
 				<div className="mb-5">
 					<Skills />
-				</div>
-				<div className="mb-5">
-					<Shields />
 				</div>
 				<div className="mb-5">
 					<Projects />

@@ -70,7 +70,8 @@ const getText = (skill: Skill): string => {
 const SkillBadge = ({ skill }: SkillBadgeProps) => {
 	const jam = SiTypescript();
 	return (
-		<div className="flex hover:animate-bounce items-center px-2 py-1 rounded-md border-2 border-border">
+		// transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300
+		<div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 flex items-center px-2 py-1 rounded-md border-2 border-border">
 			{getIcon(skill)({
 				className: 'text-xl text-primary',
 			})}
