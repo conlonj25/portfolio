@@ -5,8 +5,8 @@ import SkillBadge from './SkillBadge';
 
 const Skills = () => {
 	return (
-		<div className="bg-slate-400 p-3 rounded-lg">
-			<h1 className="text-3xl">Skills</h1>
+		<div className="p-4 rounded-md border-2 border-border">
+			<h1 className="text-3xl mb-3">Skills</h1>
 			<div className="flex flex-wrap gap-2">
 				<SkillBadge skill={'typescript'} />
 				<SkillBadge skill={'gitlab'} />

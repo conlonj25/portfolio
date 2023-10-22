@@ -61,9 +61,9 @@ const getText = (skill: Skill): string => {
 const SkillBadge = ({ skill }: SkillBadgeProps) => {
 	const jam = SiTypescript();
 	return (
-		<div className="bg-slate-600 flex items-center px-2 py-1 rounded-md">
-			{getIcon(skill)({ className: 'text-xl text-pink-400' })}
-			<p className="ml-2 text-xl text-white">{getText(skill)}</p>
+		<div className="flex items-center px-2 py-1 rounded-md border-2 border-border">
+			{getIcon(skill)({ className: 'text-xl text-primary' })}
+			<p className="ml-2 text-xl text-foreground">{getText(skill)}</p>
 		</div>
 	);
 };

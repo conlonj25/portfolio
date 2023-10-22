@@ -2,8 +2,8 @@ import ProjectView from './ProjectView';
 
 const Projects = () => {
 	return (
-		<div className="bg-slate-400 p-3 rounded-lg">
-			<h1 className="text-3xl">Projects</h1>
+		<div className="bg-card p-3 rounded-md border-2 border-border">
+			<h1 className="text-3xl mv-3">Projects</h1>
 			<div className="grid gap-4 p-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
 				<ProjectView />
 				<ProjectView />
