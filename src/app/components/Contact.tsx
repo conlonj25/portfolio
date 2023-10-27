@@ -6,8 +6,7 @@ import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si';
 
 const Contact = () => {
 	return (
-		<div className="p-4 rounded-md border-2 border-border">
-			<h1 className="text-3xl mb-3">Contact</h1>
+		<div className="p-4">
 			<div className="flex gap-4">
 				<div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 flex items-center px-2 py-1 rounded-md border-2 border-border">
 					<SiGithub className="text-xl text-primary" />

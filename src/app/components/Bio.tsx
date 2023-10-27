@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Bio = () => {
 	return (
-		<div className="p-4 rounded-md border-2 border-border">
+		<div className="p-4">
 			<p className="text-xl mb-3">
 				{"Hi, I'm James."}
 				<br />
