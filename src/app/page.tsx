@@ -17,7 +17,7 @@ export default function Home() {
 			</div>
 
 			<div className="container mx-auto">
-				<div className="flex flex-row justify-around gap-4 mb-5">
+				<div className="flex flex-row flex-wrap justify-around gap-4 mb-5">
 					<div>
 						<Bio />
 					</div>
