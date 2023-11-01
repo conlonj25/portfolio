@@ -5,8 +5,8 @@ const projectData: ProjectData[] = [
 		title: 'James-Conlon.dev',
 		skills: 'React JS, Next JS, Tailwind CSS, AWS',
 		description: 'View the source for this page',
-		imageLink: '/james.gif',
-		codeLink: 'https://github.com/conlonj25/james-conlon-dev',
+		imageLink: '/james.png',
+		codeLink: 'https://github.com/conlonj25/portfolio',
 		liveLink: 'https://www.james-conlon.dev/',
 	},
 	{
