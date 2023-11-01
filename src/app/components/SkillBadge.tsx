@@ -1,17 +1,29 @@
 import { Skill } from '@/types';
 import { IconType, IconBaseProps } from 'react-icons';
 import {
+	SiAmazonaws,
+	SiAzuredevops,
+	SiDigitalocean,
+	SiDocker,
+	SiGithub,
+	SiGitlab,
 	SiJavascript,
-	SiMysql,
+	SiJest,
+	SiKubernetes,
+	SiMaterialdesign,
 	SiNextdotjs,
-	SiNginx,
+	SiNuke,
+	SiPostgresql,
+	SiPostman,
 	SiPython,
 	SiReact,
+	SiRubyonrails,
 	SiTailwindcss,
+	SiTestinglibrary,
 	SiTypescript,
+	SiVercel,
 } from 'react-icons/si';
-
-import { FaJava } from 'react-icons/fa';
+import { FaJava } from 'react-icons/fa6';
 
 type SkillBadgeProps = {
 	skill: Skill;
@@ -23,20 +35,44 @@ const getIcon = (skill: Skill): IconType => {
 			return SiTypescript;
 		case 'javascript':
 			return SiJavascript;
-		case 'java':
-			return FaJava;
 		case 'python':
 			return SiPython;
-		case 'mysql':
-			return SiMysql;
-		case 'nginx':
-			return SiNginx;
+		case 'java':
+			return FaJava;
 		case 'react':
 			return SiReact;
-		case 'next':
-			return SiNextdotjs;
 		case 'tailwind':
 			return SiTailwindcss;
+		case 'materialUI':
+			return SiMaterialdesign;
+		case 'next':
+			return SiNextdotjs;
+		case 'rails':
+			return SiRubyonrails;
+		case 'postgreSQL':
+			return SiPostgresql;
+		case 'docker':
+			return SiDocker;
+		case 'kubernetes':
+			return SiKubernetes;
+		case 'gitlabCI':
+			return SiGitlab;
+		case 'githubActions':
+			return SiGithub;
+		case 'AzureDevops':
+			return SiAzuredevops;
+		case 'digitalOcean':
+			return SiDigitalocean;
+		case 'aws':
+			return SiAmazonaws;
+		case 'vercel':
+			return SiVercel;
+		case 'jest':
+			return SiJest;
+		case 'reactTestingLibrary':
+			return SiTestinglibrary;
+		case 'postman':
+			return SiPostman;
 		default:
 			return SiTypescript;
 	}
@@ -48,29 +84,52 @@ const getText = (skill: Skill): string => {
 			return 'Typescript';
 		case 'javascript':
 			return 'Javascript';
-		case 'java':
-			return 'Java';
 		case 'python':
 			return 'Python';
-		case 'mysql':
-			return 'MySQL';
-		case 'nginx':
-			return 'Nginx';
+		case 'java':
+			return 'Java';
 		case 'react':
 			return 'React';
+		case 'tailwind':
+			return 'Tailwind';
+		case 'materialUI':
+			return 'Material UI';
 		case 'next':
 			return 'Next JS';
-		case 'tailwind':
-			return 'Tailwind CSS';
+		case 'rails':
+			return 'Rails';
+		case 'postgreSQL':
+			return 'PostgreSQL';
+		case 'docker':
+			return 'Docker';
+		case 'kubernetes':
+			return 'Kubernetes';
+		case 'gitlabCI':
+			return 'Gitlab CI';
+		case 'githubActions':
+			return 'Github Actions';
+		case 'AzureDevops':
+			return 'Azure Devops';
+		case 'digitalOcean':
+			return 'Digital Ocean';
+		case 'aws':
+			return 'AWS';
+		case 'vercel':
+			return 'Vercel';
+		case 'jest':
+			return 'Jest';
+		case 'reactTestingLibrary':
+			return 'React Testing Library';
+		case 'postman':
+			return 'Postman';
 		default:
-			return 'Typescript';
+			return '';
 	}
 };
 
 const SkillBadge = ({ skill }: SkillBadgeProps) => {
 	const jam = SiTypescript();
 	return (
-		// transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300
 		<div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 flex items-center px-2 py-1 rounded-md border-2 border-border">
 			{getIcon(skill)({
 				className: 'text-xl text-primary',
