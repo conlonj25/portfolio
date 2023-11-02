@@ -2,8 +2,8 @@ import { ProjectData } from '@/types';
 
 const projectData: ProjectData[] = [
 	{
-		title: 'James-Conlon.dev',
-		skills: 'React JS, Next JS, Tailwind CSS, AWS',
+		title: 'jamesconlon.dev',
+		skills: 'React JS, Next JS, Tailwind CSS',
 		description: 'View the source for this page',
 		imageLink: '/james.png',
 		codeLink: 'https://github.com/conlonj25/portfolio',
