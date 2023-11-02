@@ -7,7 +7,7 @@ const projectData: ProjectData[] = [
 		description: 'View the source for this page',
 		imageLink: '/james.png',
 		codeLink: 'https://github.com/conlonj25/portfolio',
-		liveLink: 'https://www.james-conlon.dev/',
+		liveLink: 'https://www.jamesconlon.dev/',
 	},
 	{
 		title: 'Bookshelf',
