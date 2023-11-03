@@ -43,6 +43,14 @@ const projectData: ProjectData[] = [
 		codeLink: undefined,
 		liveLink: undefined,
 	},
+	{
+		title: 'Weather App',
+		skills: 'Next JS, shadcn, OpenWeather API',
+		description: 'Simple weather app built on top of OpenWeather API',
+		imageLink: '/weather.png',
+		codeLink: 'https://github.com/conlonj25/weather',
+		liveLink: 'https://weather-zeta-blue.vercel.app/',
+	},
 ];
 
 export default projectData;
